@@ -34,3 +34,15 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+      - shell: bash
+        name: Secret Test
+        env: 
+          TEST_SECRET: ${{ secrets.HAHA }}
+        run: |
+          echo "$TEST_SECRET"
+
+      - shell: bash
+        name: Environment Test
+        run: |
+          echo "$DFDF"
