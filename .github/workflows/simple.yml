@@ -40,11 +40,11 @@ jobs:
         env: 
           TEST_SECRET: ${{ secrets.HAHA }}
         run: |
-          if [ $TEST_SECRET==HAHAtest ]; echo same ; fi
+          if [ $TEST_SECRET==HAHAtest ]; then echo same ; fi
           
 
       - shell: bash
         name: Environment Test
         run: |
-          if [ $$DFDF==DFDFtest ]; echo same ; fi
+          if [ $$DFDF==DFDFtest ]; then echo same ; fi
           
