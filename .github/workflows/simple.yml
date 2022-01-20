@@ -40,9 +40,9 @@ jobs:
         env: 
           TEST_SECRET: ${{ secrets.HAHA }}
         run: |
-          echo "$TEST_SECRET"
+          echo "$TEST_SECRET==HAHAtest"
 
       - shell: bash
         name: Environment Test
         run: |
-          echo "$DFDF"
+          echo "$DFDF==DFDFtest"
